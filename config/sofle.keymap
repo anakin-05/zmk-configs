@@ -207,7 +207,7 @@
 
         blsh {
             bindings = <&kp BACKSLASH>;
-            key-positions = <27 38>;
+            key-positions = <27 40>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
             layers = <0 1 3>;
@@ -272,7 +272,7 @@
         };
 
         fslh {
-            bindings = <&kp SLASH>;
+            bindings = <&kp FSLH>;
             key-positions = <32 47>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
@@ -290,6 +290,14 @@
         toggle_default {
             bindings = <&to 0>;
             key-positions = <49 36>;
+        };
+
+        slh {
+            bindings = <&kp FSLH>;
+            key-positions = <27 38>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0 1 3>;
         };
     };
 
