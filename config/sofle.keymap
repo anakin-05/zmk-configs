@@ -289,9 +289,9 @@
     };
 
     behaviors {
-        hml: homrow_mods_left {
+        hml: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMROW_MODS_LEFT";
+            label = "HOMEROW_MODS_LEFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
