@@ -593,7 +593,7 @@
             bindings = <
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &none        &none  &none  &none  &none  &none
 &ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &trans       &none  &none  &none  &none  &none
-&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &rgb_ug RGB_TOG  &bootloader                                &bootloader  &none  &none  &none  &none  &none
+&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &rgb_ug RGB_TOG  &bootloader                                &bootloader  &to 6  &to 0  &none  &none  &none
 &none              &none            &none            &none            &none            &sys_reset       &rgb_ug RGB_TOG    &none  &sys_reset   &none  &none  &none  &none  &none
                                     &none            &none            &none            &none            &none              &none  &none        &none  &none  &none
             >;
@@ -627,7 +627,7 @@
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
                 <&inc_dec_kp PG_UP PG_DN>;
 
-            label = "gaming";
+            label = "game";
         };
 
         lower_layer {
