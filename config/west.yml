@@ -7,10 +7,10 @@ manifest:
     - name: m165437 #new entry
       url-base: https://github.com/M165437 #new entry
   projects:
-    #  - name: zmk-studio
-    #  remote: zmkfirmware
-    #  revision: main
-    #  import: app/west.yml
+    - name: zmk-studio
+      remote: zmkfirmware
+      revision: main
+      # import: app/west.yml
     - name: zmk
       remote: badjeff
       revision: feat/pointers-move-scroll
