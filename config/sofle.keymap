@@ -94,7 +94,7 @@
         };
 
         lpar_lt {
-            bindings = <&hm_combo_lpar_lt LS(LEFT_CONTROL) 0>;
+            bindings = <&lpar_lt_moprh>;
             key-positions = <31 32>;
             layers = <0 3>;
             timeout-ms = <18>;
@@ -102,7 +102,7 @@
         };
 
         rpar_gt {
-            bindings = <&hm_combo_rpar_gt LS(LEFT_ALT) 0>;
+            bindings = <&rpar_gt_morph>;
             key-positions = <32 33>;
             layers = <0 3>;
             timeout-ms = <18>;
