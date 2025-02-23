@@ -272,7 +272,7 @@
         };
 
         fslh {
-            bindings = <&kp FSLH>;
+            bindings = <&kp SLASH>;
             key-positions = <32 47>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
@@ -374,19 +374,19 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53 54 45 46 47>;
         };
 
-        mod_moprh_lpar_lt: mod_moprh_lpar_lt {
+        lpar_lt_moprh: lpar_lt_moprh {
             compatible = "zmk,behavior-mod-morph";
-            label = "MOD_MOPRH_LPAR_LT";
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
+            label = "LPAR_LT_MOPRH";
+            bindings = <&kp LPAR>, <&kp LT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mod_morph_rpar_gt: mod_morph_rpar_gt {
+        rpar_gt_morph: rpar_gt_morph {
             compatible = "zmk,behavior-mod-morph";
-            label = "MOD_MORPH_RPAR_GT";
-            bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
+            label = "RPAR_GT_MORPH";
+            bindings = <&kp RPAR>, <&kp GT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -395,7 +395,7 @@
         hm_combo_lpar_lt: hm_combo_lpar_lt {
             compatible = "zmk,behavior-hold-tap";
             label = "HM_COMBO_LPAR_LT";
-            bindings = <&kp>, <&mod_moprh_lpar_lt>;
+            bindings = <&kp>, <&lpar_lt_moprh>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -409,7 +409,7 @@
         hm_combo_rpar_gt: hm_combo_rpar_gt {
             compatible = "zmk,behavior-hold-tap";
             label = "HM_COMBO_RPAR_GT";
-            bindings = <&kp>, <&mod_morph_rpar_gt>;
+            bindings = <&kp>, <&rpar_gt_morph>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
