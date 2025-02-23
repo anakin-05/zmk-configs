@@ -592,9 +592,9 @@
             display-name = "sys";
             bindings = <
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &none        &none  &none  &none  &none  &none
-&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &bootloader  &none  &none  &none  &none  &none
-&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &sys_reset   &none  &none  &none  &none  &none
-&none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none        &none  &none  &none  &none  &none
+&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &trans       &none  &none  &none  &none  &none
+&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &rgb_ug RGB_TOG  &bootloader                                &bootloader  &none  &none  &none  &none  &none
+&none              &none            &none            &none            &none            &sys_reset       &rgb_ug RGB_TOG    &none  &sys_reset   &none  &none  &none  &none  &none
                                     &none            &none            &none            &none            &none              &none  &none        &none  &none  &none
             >;
 
@@ -613,8 +613,8 @@
             label = "mouse";
         };
 
-        gaming_layer {
-            display-name = "default";
+        game_layer {
+            display-name = "game";
             bindings = <
 &kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                   &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &to 0
 &kp ESC    &kp Q   &kp W     &kp E     &kp R      &kp T                                    &kp Y   &kp U      &kp I      &kp O     &kp P     &kp BSPC
