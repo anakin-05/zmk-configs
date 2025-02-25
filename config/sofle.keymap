@@ -272,7 +272,7 @@
         };
 
         fslh {
-            bindings = <&kp AT>;
+            bindings = <&kp FSLH>;
             key-positions = <32 47>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
