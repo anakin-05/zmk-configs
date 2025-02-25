@@ -492,7 +492,7 @@
             bindings = <&kp DOT>, <&kp COLON>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         dot_inner_morph: dot_inner_morph {
