@@ -541,7 +541,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LGUI>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp RIGHT>,
                 <&macro_release>,
                 <&kp LGUI>;
@@ -555,7 +555,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LGUI>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp LEFT>,
                 <&macro_release>,
                 <&kp LGUI>;
@@ -569,7 +569,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LALT>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp RIGHT>,
                 <&macro_release>,
                 <&kp LALT>;
@@ -583,7 +583,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LALT>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp LEFT>,
                 <&macro_release>,
                 <&kp LALT>;
