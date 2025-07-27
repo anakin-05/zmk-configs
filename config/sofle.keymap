@@ -29,8 +29,8 @@
         compatible = "zmk,conditional-layers";
 
         sys {
-            if-layers = <2 3>;
-            then-layer = <4>;
+            if-layers = <3 4>;
+            then-layer = <5>;
         };
     };
 
@@ -38,25 +38,25 @@
         compatible = "zmk,combos";
 
         toggle_gaming {
-            bindings = <&to 6>;
-            key-positions = <36 49>;
-            layers = <0 1 3>;
+            bindings = <&to 7>;
+            key-positions = <37 48>;
+            layers = <0 2 4>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
 
         bspc {
-            bindings = <&mt LC(BSPC) BACKSPACE>;
+            bindings = <&kp BSPC>;
             key-positions = <19 20>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
 
         del {
-            bindings = <&mt LC(DEL) DEL>;
+            bindings = <&kp DEL>;
             key-positions = <20 21>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -64,7 +64,7 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <26 27>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -72,7 +72,7 @@
         cut {
             bindings = <&kp LC(X)>;
             key-positions = <38 40>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -80,7 +80,7 @@
         copy {
             bindings = <&kp LC(INS)>;
             key-positions = <38 39>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -88,7 +88,7 @@
         paste {
             bindings = <&kp LS(INS)>;
             key-positions = <39 40>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -96,7 +96,7 @@
         lpar_lt {
             bindings = <&lpar_lt_moprh>;
             key-positions = <31 32>;
-            layers = <0 3>;
+            layers = <0 4>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -104,7 +104,7 @@
         rpar_gt {
             bindings = <&rpar_gt_morph>;
             key-positions = <32 33>;
-            layers = <0 3>;
+            layers = <0 4>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -112,7 +112,7 @@
         lt {
             bindings = <&kp LT>;
             key-positions = <31 32>;
-            layers = <1>;
+            layers = <2>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -120,7 +120,7 @@
         gt {
             bindings = <&kp GT>;
             key-positions = <32 33>;
-            layers = <1>;
+            layers = <2>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -128,7 +128,7 @@
         lbkt {
             bindings = <&kp LBKT>;
             key-positions = <45 46>;
-            layers = <0 3>;
+            layers = <0 4>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -136,7 +136,7 @@
         rbkt {
             bindings = <&kp RBKT>;
             key-positions = <46 47>;
-            layers = <0 3>;
+            layers = <0 4>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -144,7 +144,7 @@
         lbrc {
             bindings = <&kp LBRC>;
             key-positions = <45 46>;
-            layers = <1>;
+            layers = <2>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -152,7 +152,7 @@
         rbrc {
             bindings = <&kp RBRC>;
             key-positions = <46 47>;
-            layers = <1>;
+            layers = <2>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -162,7 +162,7 @@
             key-positions = <14 15>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
         };
 
         at {
@@ -170,7 +170,7 @@
             key-positions = <14 25>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
         };
 
         hash {
@@ -178,7 +178,7 @@
             key-positions = <15 26>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
         };
 
         dllr {
@@ -186,7 +186,7 @@
             key-positions = <16 27>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
         };
 
         prcnt {
@@ -194,7 +194,7 @@
             key-positions = <17 28>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
         };
 
         grave {
@@ -202,7 +202,7 @@
             key-positions = <26 37>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
         };
 
         blsh {
@@ -210,7 +210,7 @@
             key-positions = <27 38>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
         };
 
         equal {
@@ -218,7 +218,7 @@
             key-positions = <28 39>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
         };
 
         tilde {
@@ -226,7 +226,7 @@
             key-positions = <29 40>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
         };
 
         caret {
@@ -234,7 +234,7 @@
             key-positions = <18 31>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
         };
 
         plus {
@@ -242,7 +242,7 @@
             key-positions = <19 32>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
         };
 
         star {
@@ -250,7 +250,7 @@
             key-positions = <20 33>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
         };
 
         amps {
@@ -268,7 +268,7 @@
             key-positions = <31 46>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
         };
 
         fslh {
@@ -276,7 +276,7 @@
             key-positions = <47 32>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
         };
 
         pipe {
@@ -284,12 +284,12 @@
             key-positions = <33 48>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
         };
 
         toggle_default {
             bindings = <&to 0>;
-            key-positions = <49 36>;
+            key-positions = <37 48>;
         };
 
         slh {
@@ -297,7 +297,12 @@
             key-positions = <27 40>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 3>;
+            layers = <0 2 4>;
+        };
+
+        toggle_colemak {
+            bindings = <&to 1>;
+            key-positions = <38 47>;
         };
     };
 
@@ -610,10 +615,25 @@
 &kp ESC    &kp Q        &kp W        &kp E         &kp R         &kp T                                   &kp Y      &kp U         &kp I         &kp O        &kp P          &kp BSPC
 &kp TAB    &hml LGUI A  &hml LALT S  &hsl LSHFT D  &hml LCTRL F  &kp G                                   &kp H      &hmr RCTRL J  &hsr RSHFT K  &hmr LALT L  &hmr RGUI SQT  &kp SQT
 &kp LSHFT  &kp Z        &kp X        &kp C         &kp V         &kp B       &kp C_MUTE     &none        &kp N      &kp M         &comma_morph  &dot_morph   &qexcl         &kp ENTER
-                        &kp LGUI     &kp LALT      &mo 5         &kp LSHIFT  &lt 2 SPACE    &lt 3 ENTER  &kp LCTRL  &mo 1         &kp RALT      &kp RGUI
+                        &kp LGUI     &kp LALT      &mo 6         &kp LSHIFT  &lt 3 SPACE    &lt 4 ENTER  &kp LCTRL  &mo 2         &kp RALT      &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+
+        colemak_layer {
+            display-name = "colemak";
+            bindings = <
+&kp GRAVE  &kp N1       &kp N2       &kp N3        &kp N4        &kp N5                                  &kp N6     &kp N7        &kp N8        &kp N9       &kp N0       &none
+&kp ESC    &kp Q        &kp W        &kp F         &kp P         &kp T                                   &kp J      &kp L         &kp U         &kp Y        &kp SQT      &kp BSPC
+&kp TAB    &hml LGUI A  &hml LALT R  &hsl LSHFT S  &hml LCTRL T  &kp G                                   &kp M      &hmr RCTRL N  &hsr RSHFT E  &hmr LALT I  &hmr RGUI O  &kp SQT
+&kp LSHFT  &kp Z        &kp X        &kp C         &kp D         &kp V       &kp C_MUTE     &none        &kp K      &kp H         &comma_morph  &dot_morph   &qexcl       &kp ENTER
+                        &kp LGUI     &kp LALT      &mo 6         &kp LSHIFT  &lt 3 SPACE    &lt 4 ENTER  &kp LCTRL  &mo 2         &kp RALT      &kp RGUI
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         nav_layer {
@@ -664,7 +684,7 @@
             bindings = <
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &none        &none  &none  &none  &none  &none
 &ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &trans       &none  &none  &none  &none  &none
-&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &rgb_ug RGB_TOG  &bootloader                                &bootloader  &to 6  &to 0  &none  &none  &none
+&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &rgb_ug RGB_TOG  &bootloader                                &bootloader  &to 7  &to 0  &none  &none  &none
 &none              &none            &none            &none            &none            &sys_reset       &rgb_ug RGB_TOG    &none  &sys_reset   &none  &none  &none  &none  &none
                                     &none            &none            &none            &none            &none              &none  &none        &none  &none  &none
             >;
@@ -691,7 +711,7 @@
 &kp ESC    &kp Q   &kp W     &kp E     &kp R      &kp T                                    &kp Y   &kp U      &kp I      &kp O     &kp P     &kp BSPC
 &kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G                                    &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B           &kp C_MUTE    &none      &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp ENTER
-                   &kp LGUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &kp SPACE     &kp ENTER  &mo 8   &kp RCTRL  &kp RALT   &kp RGUI
+                   &kp LGUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &kp SPACE     &kp ENTER  &mo 9   &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
             sensor-bindings =
