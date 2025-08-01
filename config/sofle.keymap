@@ -642,11 +642,11 @@
 
         nav_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                          &trans           &trans             &trans           &trans           &trans     &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                          &kp TAB          &mt LC(BSPC) BSPC  &trans           &mt LC(DEL) DEL  &trans     &trans
-&trans  &kp N0  &kp N4  &kp N5  &kp N6  &trans                          &mt_home 0 LEFT  &mt LC(END) DOWN   &mt LC(HOME) UP  &mt_end 0 RIGHT  &kp ENTER  &trans
-&trans  &trans  &kp N1  &kp N2  &kp N3  &trans        &trans    &trans  &kp INS          &kp PG_DN          &kp PG_UP        &kp CLCK         &trans     &trans
-                &trans  &trans  &trans  &kp K_CANCEL  &trans    &trans  &trans           &trans             &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans           &trans             &trans           &trans           &trans        &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                    &kp TAB          &mt LC(BSPC) BSPC  &trans           &mt LC(DEL) DEL  &trans        &trans
+&trans  &kp N0  &kp N4  &kp N5  &kp N6  &trans                    &mt_home 0 LEFT  &mt LC(END) DOWN   &mt LC(HOME) UP  &mt_end 0 RIGHT  &kp ENTER     &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans    &trans  &kp INS          &kp PG_DN          &kp PG_UP        &kp CLCK         &kp K_CANCEL  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans             &trans           &trans
             >;
 
             label = "nav";
