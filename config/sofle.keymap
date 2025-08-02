@@ -642,11 +642,11 @@
 
         nav_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans           &trans             &trans           &trans           &trans        &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                    &kp TAB          &mt LC(BSPC) BSPC  &trans           &mt LC(DEL) DEL  &trans        &trans
-&trans  &kp N0  &kp N4  &kp N5  &kp N6  &trans                    &mt_home 0 LEFT  &mt LC(END) DOWN   &mt LC(HOME) UP  &mt_end 0 RIGHT  &kp RET       &trans
-&trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans    &trans  &kp INS          &kp PG_DN          &kp PG_UP        &kp CLCK         &kp K_CANCEL  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans             &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans           &trans            &trans             &trans           &trans        &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                    &kp TAB          &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &mt LC(DEL) DEL  &trans        &trans
+&trans  &kp N0  &kp N4  &kp N5  &kp N6  &trans                    &mt_home 0 LEFT  &mt LC(END) DOWN  &mt LC(HOME) UP    &mt_end 0 RIGHT  &kp RET       &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans    &trans  &kp INS          &kp PG_DN         &kp PG_UP          &kp CLCK         &kp K_CANCEL  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans            &trans             &trans
             >;
 
             label = "nav";
@@ -654,11 +654,11 @@
 
         fn_layer {
             bindings = <
-&trans  &trans         &trans        &trans         &trans         &trans                    &trans  &trans             &trans                  &trans  &trans  &trans
-&trans  &kp F12        &kp F7        &kp F8         &kp F9         &trans                    &trans  &kp C_PREVIOUS     &kp C_NEXT              &trans  &trans  &trans
-&trans  &hml LGUI F11  &hml LALT F4  &hsl LSHFT F5  &hml LCTRL F6  &trans                    &trans  &kp C_VOLUME_DOWN  &hsr RSHFT C_VOLUME_UP  &trans  &trans  &trans
-&trans  &kp F10        &kp F1        &kp F2         &kp F3         &trans  &trans    &trans  &trans  &kp C_MUTE         &kp C_PP                &trans  &trans  &trans
-                       &trans        &trans         &trans         &trans  &trans    &trans  &trans  &trans             &trans                  &trans
+&trans  &trans   &trans  &trans         &trans         &trans                    &trans  &trans        &trans               &trans  &trans  &trans
+&trans  &kp F12  &kp F7  &kp F8         &kp F9         &trans                    &trans  &kp C_PREV    &kp C_NEXT           &trans  &trans  &trans
+&trans  &kp F11  &kp F4  &hsl LSHFT F5  &hml LCTRL F6  &trans                    &trans  &kp C_VOL_DN  &hsr RSHFT C_VOL_UP  &trans  &trans  &trans
+&trans  &kp F10  &kp F1  &kp F2         &kp F3         &trans  &trans    &trans  &trans  &kp C_MUTE    &kp C_PP             &trans  &trans  &trans
+                 &trans  &trans         &trans         &trans  &trans    &trans  &trans  &trans        &trans               &trans
             >;
 
             label = "fn";
@@ -666,11 +666,11 @@
 
         num_layer {
             bindings = <
-&trans  &trans        &trans        &trans         &trans               &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &kp N7        &kp N8         &kp N9               &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &hml LGUI N0  &hml LALT N4  &hsl LSHFT N5  &hml LCTRL NUMBER_6  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &kp N1        &kp NUMBER_2   &kp N3               &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                      &trans        &trans         &trans               &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans         &trans               &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N7  &kp N8         &kp N9               &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N0  &kp N4  &hsl LSHFT N5  &hml LCTRL NUMBER_6  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N1  &kp NUMBER_2   &kp N3               &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans         &trans               &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "num";
