@@ -543,64 +543,6 @@
         };
     };
 
-    macros {
-        next_workspace: next_workspace {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp RIGHT>,
-                <&macro_release>,
-                <&kp LGUI>;
-
-            label = "NEXT_WORKSPACE";
-        };
-
-        prev_workspace: prev_workspace {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp LEFT>,
-                <&macro_release>,
-                <&kp LGUI>;
-
-            label = "PREV_WORKSPACE";
-        };
-
-        next_tab: next_tab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp RIGHT>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "NEXT_TAB";
-        };
-
-        prev_tab: prev_tab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp LEFT>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "PREV_TAB";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -623,7 +565,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-
             label = "Default";
         };
 
