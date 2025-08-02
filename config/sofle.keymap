@@ -615,11 +615,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE  &kp N1       &kp N2       &kp N3        &kp N4        &kp N5                              &kp N6      &kp N7        &kp N8        &kp N9       &kp N0         &none
-&kp ESC    &kp Q        &kp W        &kp E         &kp R         &kp T                               &kp Y       &kp U         &kp I         &kp O        &kp P          &kp BSPC
-&kp TAB    &hml LGUI A  &hml LALT S  &hsl LSHFT D  &hml LCTRL F  &kp G                               &kp H       &hmr RCTRL J  &hsr RSHFT K  &hmr LALT L  &hmr RGUI SQT  &kp SQT
-&kp LSHFT  &kp Z        &kp X        &kp C         &kp V         &kp B     &kp C_MUTE     &none      &kp N       &kp M         &comma_morph  &dot_morph   &qexcl         &kp ENTER
-                        &kp LSHFT    &kp LCTRL     &kp LGUI      &kp LALT  &lt 3 SPACE    &lt 4 RET  &kp RSHIFT  &mo 2         &kp RALT      &kp RGUI
+&kp GRAVE  &kp N1  &kp N2     &kp N3        &kp N4        &kp N5                              &kp N6      &kp N7        &kp N8        &kp N9      &kp N0   &none
+&kp ESC    &kp Q   &kp W      &kp E         &kp R         &kp T                               &kp Y       &kp U         &kp I         &kp O       &kp P    &kp BSPC
+&kp TAB    &kp A   &kp S      &hsl LSHFT D  &hml LCTRL F  &kp G                               &kp H       &hmr RCTRL J  &hsr RSHFT K  &kp L       &kp SQT  &kp RET
+&kp LSHFT  &kp Z   &kp X      &kp C         &kp V         &kp B     &kp C_MUTE     &kp C_PP   &kp N       &kp M         &comma_morph  &dot_morph  &qexcl   &kp DEL
+                   &kp LSHFT  &kp LCTRL     &kp LGUI      &kp LALT  &lt 3 SPACE    &lt 4 RET  &kp RSHIFT  &mo 2         &kp RALT      &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -628,11 +628,11 @@
         colemak_layer {
             display-name = "colemak";
             bindings = <
-&kp GRAVE  &kp N1       &kp N2       &kp N3        &kp N4        &kp N5                                &kp N6     &kp N7        &kp N8        &kp N9       &kp N0       &none
-&kp ESC    &kp Q        &kp W        &kp F         &kp P         &kp T                                 &kp J      &kp L         &kp U         &kp Y        &kp SQT      &kp BSPC
-&kp TAB    &hml LGUI A  &hml LALT R  &hsl LSHFT S  &hml LCTRL T  &kp G                                 &kp M      &hmr RCTRL N  &hsr RSHFT E  &hmr LALT I  &hmr RGUI O  &kp SQT
-&kp LSHFT  &kp Z        &kp X        &kp C         &kp D         &kp V       &kp C_MUTE     &none      &kp K      &kp H         &comma_morph  &dot_morph   &qexcl       &kp ENTER
-                        &kp LGUI     &kp LALT      &mo 6         &kp LSHIFT  &lt 3 SPACE    &lt 4 RET  &kp LCTRL  &mo 2         &kp RALT      &kp RGUI
+&kp GRAVE  &kp N1  &kp N2     &kp N3        &kp N4        &kp N5                              &kp N6     &kp N7        &kp N8        &kp N9      &kp N0   &none
+&kp ESC    &kp Q   &kp W      &kp F         &kp P         &kp T                               &kp J      &kp L         &kp U         &kp Y       &kp SQT  &kp BSPC
+&kp TAB    &kp A   &kp R      &hsl LSHFT S  &hml LCTRL T  &kp G                               &kp M      &hmr RCTRL N  &hsr RSHFT E  &kp I       &kp O    &kp RET
+&kp LSHFT  &kp Z   &kp X      &kp C         &kp D         &kp V     &kp C_MUTE     &kp C_PP   &kp K      &kp H         &comma_morph  &dot_morph  &qexcl   &kp DEL
+                   &kp LSHFT  &kp LCTRL     &kp LGUI      &kp LALT  &lt 3 SPACE    &lt 4 RET  &kp RSHFT  &mo 2         &kp RALT      &kp RGUI
             >;
 
             sensor-bindings =
@@ -698,11 +698,11 @@
 
         mouse_layer {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans                             &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &msc SCRL_UP                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP     &mmv MOVE_RIGHT                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mkp MB1        &mkp MCLK       &mkp MB2         &msc SCRL_DOWN   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans          &trans          &trans           &trans           &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans                                   &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans  &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &msc SCRL_UP                             &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP     &mmv MOVE_RIGHT                          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &mkp MB1        &mkp MCLK       &mkp MB2         &msc SCRL_DOWN   &trans    &trans        &trans          &mkp LCLK       &mkp MCLK     &mkp RCLK        &trans  &trans
+                &trans          &trans          &trans           &trans           &trans    &msc SCRL_UP  &msc SCRL_DOWN  &trans          &trans        &trans
             >;
 
             label = "mouse";
@@ -711,11 +711,11 @@
         game_layer {
             display-name = "game";
             bindings = <
-&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                 &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &to 0
-&kp ESC    &kp Q   &kp W     &kp E     &kp R      &kp T                                  &kp Y      &kp U      &kp I      &kp O     &kp P     &kp BSPC
-&kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G                                  &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B           &kp C_MUTE    &none    &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp ENTER
-                   &kp LGUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &kp SPACE     &kp RET  &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
+&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                  &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &to 0
+&kp ESC    &kp Q   &kp W     &kp E     &kp R      &kp T                                   &kp Y      &kp U      &kp I      &kp O     &kp P     &kp BSPC
+&kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G                                   &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B           &kp C_MUTE    &kp C_PP  &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp ENTER
+                   &kp LGUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &kp SPACE     &kp RET   &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
             sensor-bindings =
