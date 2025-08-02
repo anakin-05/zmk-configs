@@ -642,10 +642,10 @@
 
         nav_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans           &trans            &trans             &trans           &trans        &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                    &kp TAB          &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &mt LC(DEL) DEL  &trans        &trans
-&trans  &kp N0  &kp N4  &kp N5  &kp N6  &trans                    &mt_home 0 LEFT  &mt LC(END) DOWN  &mt LC(HOME) UP    &mt_end 0 RIGHT  &kp RET       &trans
-&trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans    &trans  &kp INS          &kp PG_DN         &kp PG_UP          &kp CLCK         &kp K_CANCEL  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans           &trans            &trans             &trans             &trans           &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                    &kp TAB          &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &mt LC(BSPC) BSPC  &mt LC(DEL) DEL  &trans
+&trans  &kp N0  &kp N4  &kp N5  &kp N6  &trans                    &mt_home 0 LEFT  &mt LC(END) DOWN  &mt LC(HOME) UP    &mt_end 0 RIGHT    &kp RET          &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans    &trans  &kp INS          &kp PG_DN         &kp PG_UP          &kp CLCK           &kp K_CANCEL     &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans            &trans             &trans
             >;
 
@@ -686,11 +686,11 @@
 
             display-name = "sys";
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans                          &trans           &trans           &trans           &trans           &trans             &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &ext_power EP_TOG  &trans
-&trans  &bt BT_CLR    &trans        &trans        &trans        &trans                          &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &bootloader        &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans           &trans           &trans           &trans           &sys_reset         &trans
-                      &trans        &trans        &trans        &trans        &trans    &trans  &trans           &trans           &trans           &trans
+&trans  &trans        &trans        &trans        &trans        &trans                            &trans           &trans           &trans           &trans           &trans             &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &ext_power EP_TOG  &trans
+&trans  &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &trans        &bt BT_CLR_ALL                    &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &trans             &trans
+&trans  &trans        &trans        &trans        &bootloader   &sys_reset      &trans    &trans  &sys_reset       &bootloader      &trans           &trans           &trans             &trans
+                      &trans        &trans        &trans        &trans          &trans    &trans  &trans           &trans           &trans           &trans
             >;
 
             label = "sys";
@@ -698,11 +698,11 @@
 
         mouse_layer {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans                                   &trans          &trans          &trans        &trans           &trans  &trans
-&trans  &trans  &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &msc SCRL_UP                             &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP     &mmv MOVE_RIGHT                          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &mkp MB1        &mkp MCLK       &mkp MB2         &msc SCRL_DOWN   &trans    &trans        &trans          &mkp LCLK       &mkp MCLK     &mkp RCLK        &trans  &trans
-                &trans          &trans          &trans           &trans           &trans    &msc SCRL_UP  &msc SCRL_DOWN  &trans          &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans          &mkp LCLK       &mkp MCLK     &mkp RCLK        &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &msc SCRL_UP  &msc SCRL_DOWN  &trans          &trans        &trans
             >;
 
             label = "mouse";
