@@ -42,7 +42,7 @@
             key-positions = <14 15>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
         };
 
         mouse {
@@ -50,13 +50,13 @@
             key-positions = <15 16>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <26 27>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -64,7 +64,7 @@
         cut {
             bindings = <&kp LC(X)>;
             key-positions = <38 40>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -72,7 +72,7 @@
         copy {
             bindings = <&kp LC(INS)>;
             key-positions = <38 39>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -80,7 +80,7 @@
         paste {
             bindings = <&kp LS(INS)>;
             key-positions = <39 40>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -88,7 +88,7 @@
         bspc {
             bindings = <&kp BSPC>;
             key-positions = <19 20>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -96,7 +96,7 @@
         del {
             bindings = <&kp DEL>;
             key-positions = <20 21>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -104,7 +104,7 @@
         lpar {
             bindings = <&lpar_lt_moprh>;
             key-positions = <31 32>;
-            layers = <0 1 4>;
+            layers = <0 1 4 6>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -112,7 +112,7 @@
         rpar {
             bindings = <&rpar_gt_morph>;
             key-positions = <32 33>;
-            layers = <0 1 4>;
+            layers = <0 1 4 6>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -136,7 +136,7 @@
         lbkt {
             bindings = <&kp LBKT>;
             key-positions = <45 46>;
-            layers = <0 1 4>;
+            layers = <0 1 4 6>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -144,7 +144,7 @@
         rbkt {
             bindings = <&kp RBKT>;
             key-positions = <46 47>;
-            layers = <0 1 4>;
+            layers = <0 1 4 6>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -168,7 +168,7 @@
         at {
             bindings = <&kp AT>;
             key-positions = <14 25>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
         };
@@ -176,7 +176,7 @@
         hash {
             bindings = <&kp HASH>;
             key-positions = <15 26>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
         };
@@ -184,7 +184,7 @@
         dllr {
             bindings = <&kp DOLLAR>;
             key-positions = <16 27>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
         };
@@ -192,7 +192,7 @@
         prcnt {
             bindings = <&kp PERCENT>;
             key-positions = <17 28>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
         };
@@ -200,7 +200,7 @@
         grave {
             bindings = <&kp GRAVE>;
             key-positions = <26 37>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
         };
@@ -208,7 +208,7 @@
         blsh {
             bindings = <&kp BACKSLASH>;
             key-positions = <27 38>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
         };
@@ -216,7 +216,7 @@
         equal {
             bindings = <&kp EQUAL>;
             key-positions = <28 39>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
         };
@@ -224,7 +224,7 @@
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <29 40>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
         };
@@ -232,7 +232,7 @@
         caret {
             bindings = <&kp CARET>;
             key-positions = <18 31>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
         };
@@ -240,7 +240,7 @@
         plus {
             bindings = <&kp PLUS>;
             key-positions = <19 32>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
         };
@@ -248,7 +248,7 @@
         star {
             bindings = <&kp STAR>;
             key-positions = <20 33>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
         };
@@ -256,7 +256,7 @@
         amps {
             bindings = <&kp AMPS>;
             key-positions = <21 34>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
         };
@@ -264,7 +264,7 @@
         under {
             bindings = <&kp UNDER>;
             key-positions = <30 45>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
         };
@@ -272,7 +272,7 @@
         minus {
             bindings = <&kp MINUS>;
             key-positions = <31 46>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
         };
@@ -280,7 +280,7 @@
         fslh {
             bindings = <&kp FSLH>;
             key-positions = <47 32>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
         };
@@ -288,7 +288,7 @@
         pipe {
             bindings = <&kp PIPE>;
             key-positions = <33 48>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
         };
@@ -296,7 +296,7 @@
         tog_colemak {
             bindings = <&tog 1>;
             key-positions = <38 47>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -304,7 +304,7 @@
         tog_game {
             bindings = <&tog 7>;
             key-positions = <37 48>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2 4 6>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -587,11 +587,11 @@
 
         nav_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans           &trans            &trans             &trans             &trans           &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                    &kp TAB          &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &mt LC(BSPC) BSPC  &mt LC(DEL) DEL  &trans
-&trans  &kp N0  &kp N4  &kp N5  &kp N6  &trans                    &mt_home 0 LEFT  &mt LC(END) DOWN  &mt LC(HOME) UP    &mt_end 0 RIGHT    &kp RET          &trans
-&trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans    &trans  &kp INS          &kp PG_DN         &kp PG_UP          &kp CLCK           &kp K_CANCEL     &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans            &trans             &trans
+&trans  &trans      &trans      &trans             &trans             &trans                    &trans           &trans            &trans             &trans             &trans           &trans
+&trans  &trans      &kp LG(N7)  &kp LG(N8)         &kp LG(N9)         &trans                    &kp TAB          &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &mt LC(BSPC) BSPC  &mt LC(DEL) DEL  &trans
+&trans  &kp LG(N0)  &kp LG(N4)  &hsl LSHFT LG(N5)  &hml LCTRL LG(N6)  &trans                    &mt_home 0 LEFT  &mt LC(END) DOWN  &mt LC(HOME) UP    &mt_end 0 RIGHT    &kp RET          &trans
+&trans  &trans      &kp LG(N1)  &kp LG(N2)         &kp LG(N3)         &trans  &trans    &trans  &kp INS          &kp PG_DN         &kp PG_UP          &kp CLCK           &kp K_CANCEL     &trans
+                    &trans      &trans             &trans             &trans  &trans    &trans  &trans           &trans            &trans             &trans
             >;
 
             label = "Nav";
