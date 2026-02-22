@@ -54,9 +54,9 @@ manifest:
     - name: zmk-kscan-blackout
       remote: badjeff
       revision: main      
-    - name: cirque-input-module
-      remote: badjeff
-      revision: main
+    # - name: cirque-input-module
+    #   remote: badjeff
+    #   revision: main
     - name: nice-view-gem #new entry
       remote: m165437 #new entry
       revision: v0.3.0 #new entry
