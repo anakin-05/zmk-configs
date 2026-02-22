@@ -559,7 +559,7 @@
                 bindings = <&key_repeat>;
                 max-prior-idle-ms = <1200>;
                 strict-modifiers;
-            }
+            };
         }
 
         smart_num: smart_num {
