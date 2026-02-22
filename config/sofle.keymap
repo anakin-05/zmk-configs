@@ -1,15 +1,17 @@
-#include "common_keymap.dtsi"
 #include <behaviors.dtsi>
+#include <behaviors/num_word.dtsi> // Requires zmk-auto-layer module.
+#include <behaviors/unicode.dtsi> // Requires zmk-unicode module.
+#include <zmk-helpers/helper.h> // Requires zmk-helpers module.
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
-#define BASE 0
-#define LOWER 1
-#define RAISE 2
-#define ADJUST 3
+
+&caps_word {
+    /delete-property/ ignore-modifiers;
+};
 
 &lt {
     flavor = "balanced";
@@ -30,8 +32,6 @@
 &sl { ignore-modifiers; };
 
 / {
-    // Activate ADJUST layer by pressing raise and lower
-
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
@@ -535,24 +535,37 @@
             bindings = <&kp>, <&magic_shift_tap>;
 
             #binding-cells = <2>;
-            flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
+            flavor = "balanced";
         };
 
         magic_shift_tap: magic_shift_tap {
             compatible = "zmk,behavior-mod-morph";
             label = "MAGIC_SHIFT_TAP";
-            bindings = <&sk LSHIFT>, <&caps_word>;
+            bindings = <&shift_repeat>, <&caps_word>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
+        shift_repeat: shift_repeat {
+            compatible = "zmk,behavior-adaptive-key";
+            label = "SHIFT_REPEAT";
+
+            bindings = <&sk LSHFT>;
+            repeat {
+                trigger-keys = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z>;
+                bindings = <&key_repeat>;
+                max-prior-idle-ms = <1200>;
+                strict-modifiers;
+            }
+        }
+
         smart_num: smart_num {
             compatible = "zmk,behavior-hold-tap";
             label = "SMART_NUM";
-            bindings = <&mo>, <&sl>;
+            bindings = <&mo>, <&num_dance>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -563,8 +576,10 @@
         num_dance: num_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "NUM_DANCE";
+            bindings = <&num_word 4>, <&sl 4>;
+
             #binding-cells = <0>;
-            bindings = <&none>, <&sl 4>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -578,7 +593,7 @@
 &kp ESC    &kp Q        &kp W        &kp E         &kp R         &kp T                                         &kp Y                  &kp U         &kp I         &kp O        &kp P          &kp BSPC
 &kp TAB    &hml LGUI A  &hml LALT S  &hsl LSHFT D  &hml LCTRL F  &kp G                                         &kp H                  &hmr RCTRL J  &hsr RSHFT K  &hmr LALT L  &hmr LGUI SQT  &kp RET
 &kp LSHFT  &kp Z        &kp X        &kp C         &kp V         &kp B           &kp C_MUTE    &kp C_PP        &kp N                  &kp M         &comma_morph  &dot_morph   &qexcl         &kp RSHIFT
-                        &tog 7       &kp LCTRL     &kp LGUI      &mt LALT SPACE  &lt 3 RET     &smart_num 4 4  &magic_shift LSHIFT 0  &mo 2         &kp RALT      &kp RGUI
+                        &tog 7       &kp LCTRL     &kp LGUI      &mt LALT SPACE  &lt 3 RET     &smart_num 4 0  &magic_shift LSHIFT 0  &mo 2         &kp RALT      &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;

@@ -15,6 +15,21 @@ manifest:
       remote: badjeff
       revision: abb64ba316c29caddc49727ca2cac2f0ed5970c7
       import: app/west.yml
+
+    # ZMK modules
+    - name: zmk-adaptive-key
+      path: modules/zmk/adaptive-key
+    - name: zmk-auto-layer
+      path: modules/zmk/auto-layer
+    - name: zmk-helpers
+      path: modules/zmk/helpers
+    - name: zmk-leader-key
+      path: modules/zmk/leader-key
+    - name: zmk-tri-state
+      path: modules/zmk/tri-state
+    - name: zmk-unicode
+      path: modules/zmk/unicode
+
     - name: zmk-adns9800-driver
       remote: badjeff
       revision: main
