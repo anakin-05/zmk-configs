@@ -577,7 +577,7 @@
 &kp GRAVE  &kp N1       &kp N2       &kp N3        &kp N4        &kp N5                                        &kp N6                 &kp N7        &kp N8        &kp N9       &kp N0         &none
 &kp ESC    &kp Q        &kp W        &kp E         &kp R         &kp T                                         &kp Y                  &kp U         &kp I         &kp O        &kp P          &kp BSPC
 &kp TAB    &hml LGUI A  &hml LALT S  &hsl LSHFT D  &hml LCTRL F  &kp G                                         &kp H                  &hmr RCTRL J  &hsr RSHFT K  &hmr LALT L  &hmr LGUI SQT  &kp RET
-&kp LSHFT  &kp Z        &kp X        &kp C         &kp V         &kp B           &kp C_MUTE    &kp C_PP        &kp N                  &kp M         &comma_morph  &dot_morph   &qexcl         &kp DEL
+&kp LSHFT  &kp Z        &kp X        &kp C         &kp V         &kp B           &kp C_MUTE    &kp C_PP        &kp N                  &kp M         &comma_morph  &dot_morph   &qexcl         &kp RSHIFT
                         &tog 7       &kp LCTRL     &kp LGUI      &mt LALT SPACE  &lt 3 RET     &smart_num 4 4  &magic_shift LSHIFT 0  &mo 2         &kp RALT      &kp RGUI
             >;
 
@@ -668,9 +668,9 @@
             bindings = <
 &kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                             &kp N6     &kp N7  &kp N8     &kp N9    &kp N0    &to 0
 &kp ESC    &kp Q   &kp W     &kp E     &kp R      &kp T                              &kp Y      &kp U   &kp I      &kp O     &kp P     &kp BSPC
-&kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G                              &kp H      &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B      &kp C_MUTE    &kp C_PP  &kp N      &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp ENTER
-                   &kp LGUI  &kp LALT  &kp LCTRL  &kp RSHFT  &kp SPACE     &kp RET   &kp RSHFT  &mo 2   &kp RALT   &kp RGUI
+&kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G                              &kp H      &kp J   &kp K      &kp L     &kp SQT   &kp ENTER
+&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B      &kp C_MUTE    &kp C_PP  &kp N      &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHIFT
+                   &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &kp RET       &kp LALT  &kp RSHFT  &mo 2   &kp RALT   &kp RGUI
             >;
 
             sensor-bindings =
