@@ -13,7 +13,7 @@ manifest:
     #   import: app/west.yml
     - name: zmk
       remote: badjeff
-      revision: main
+      revision: abb64ba316c29caddc49727ca2cac2f0ed5970c7
       import: app/west.yml
     - name: zmk-adns9800-driver
       remote: badjeff
@@ -54,9 +54,9 @@ manifest:
     - name: zmk-kscan-blackout
       remote: badjeff
       revision: main      
-    # - name: cirque-input-module
-    #   remote: badjeff
-    #   revision: main
+    - name: cirque-input-module
+      remote: badjeff
+      revision: main
     - name: nice-view-gem #new entry
       remote: m165437 #new entry
       revision: v0.3.0 #new entry
