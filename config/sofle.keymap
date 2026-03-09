@@ -575,7 +575,7 @@
         num_dance: num_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "NUM_DANCE";
-            bindings = <&num_word 4>, <&sl 5>;
+            bindings = <&num_word 5>, <&sl 5>;
 
             #binding-cells = <0>;
             tapping-term-ms = <200>;
